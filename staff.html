@@ -3,11 +3,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="icon" href="https://github.com/WebPage0/CCSO/blob/main/s.webp?raw=true">
 <title>Coconino Sheriff's Department</title>
-<meta name="description" content="Coconino Sheriff's Department | Help Page">
+<meta name="description" content="Coconino Sheriff's Department | Staff Page">
 <style>
     body {
         margin: 0;
-
+overflow-x: hidden;
         font-family: Arial, Helvetica, sans-serif;
         background-color: rgb(73, 51, 13);
     }
@@ -70,47 +70,57 @@
       font-size: 24px;
     }
 
-    button {
-         
+    .card {
 
-      margin: 20px;
-  background: rgba(136, 90, 10, 0.741);
-  border: none;
-  padding: 10px 20px;
+      margin: 10px;
+  width:100%;
+  height: 250px;
+  background: #6f501f;
+  border-radius: 5px;
+  text-align: center;
+  color: #f0f0f0;
+  font-family: inherit;
+  z-index: 1;
+}
+
+.img {
   display: flex;
-  font-size: 15px;
-  font-weight: 600;
-  width: 120px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transform: skew(-21deg);
+  margin: 60px auto 10px auto;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 99;
+  background-color: #152f50;
 }
 
-span {
-  display: inline-flex;
-  transform: skew(21deg);
-}
-
-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 100%;
-  left: 0;
-  background: rgba(136, 90, 10, 0.829);
+p {
   opacity: 0;
-  z-index: -1;
   transition: all 0.5s;
 }
 
-button:hover {
-  color: #fff;
+.heading {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-button:hover::before {
-  left: 0;
-  right: 0;
+svg {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.card:hover .img {
+  transform: scale(1.1);
+  border: 1px solid #f0f0f0;
+}
+
+.card:hover h1,
+.card:hover p {
   opacity: 1;
 }
 
@@ -137,16 +147,43 @@ button:hover::before {
       <img width="100%" src="https://github.com/WebPage0/CCSO/blob/main/imgban.png?raw=true" />
       
 
-      <div >
-
-
-    <button style="width: 97%;" onclick="url('https://www.youtube.com/watch?v=oRV_jM7rrdI')">
-        <span style="font-size: small;">How To Join Cad</span>
-    </button>
-  
-    </button>
+      <div class="card">
+        <div class="img">
+         <img style="border-radius: 100px;" width="90px" height="90px" src="https://github.com/WebPage0/CCSO/blob/main/Screenshot%202023-01-28%20at%2010.07.07%20PM.png?raw=true"/>
+        </div>
+        <span class="heading">Jack</span>
+        <p>
+          The Best Commisioner On The Planet.
+        </p>
+        <p>
+          Has Been On The Team Since Jan. 26, 2023
+        </p>
       </div>
 
+      <div class="card">
+        <div class="img">
+         <img style="border-radius: 100px;" width="90px" height="90px" src="https://github.com/WebPage0/CCSO/blob/main/Screenshot%202023-01-28%20at%2010.15.42%20PM.png?raw=true"/>
+        </div>
+        <span class="heading">Puffballs</span>
+        <p>
+          Very Puffy When It Comes To Balls.
+        </p>
+        <p>
+          Has Been On The Team Since Jan. 19, 2023
+        </p>
+      </div>
+      <div class="card">
+        <div class="img">
+         <img style="border-radius: 100px;" width="90px" height="90px" src="https://cdn.discordapp.com/avatars/717557499166720011/63e17596d2234e6a916228c37f917c35.webp?size=80"/>
+        </div>
+        <span class="heading">CrapAndShits</span>
+        <p>
+          Aka Minty Is More Minty Then A Mint
+        </p>
+        <p>
+          Has Been On The Team Since Jan. 22, 2023
+        </p>
+      </div>
      
 
 </body>
